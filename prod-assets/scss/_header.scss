@@ -1,0 +1,85 @@
+.header-transparent{
+    background: transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 9;
+
+}
+
+.header-main {
+    padding: 20px;
+
+    @include large-up {
+        padding: 0 150px;
+    }
+}
+.header-line1,.header-line2,.header-line3{
+    height: 3px;
+    width: 23px;
+    margin: 5px;
+    transition: all .4s;
+
+}
+.change .header-line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+.change .header-line2{
+    opacity: 0;
+}
+.change .header-line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+
+
+
+
+}
+.navbar-nav{
+    background: #fff!important;
+    margin-top: 15px;
+    .nav-link{
+        color:$black!important;
+    }
+
+    @include medium-up{
+        background: transparent!important;
+        margin-top: 0px;
+        .nav-link{
+            color:$white!important;
+        }
+
+    }
+
+}
+
+// Change styles localy in navbar-brand
+.navbar-brand {
+    font-size: 2rem!important;
+    color:$white!important;
+}
+
+.nav-item{
+    padding-right: 15px;
+}
+
+.nav-link {
+    font-size: 22px!important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    transition: all .4s ease-in-out;
+    &:hover {
+        color:$primary!important;
+
+    }
+
+}
+.active .nav-link{
+    color:$primary!important;
+
+
+}
+
+
+

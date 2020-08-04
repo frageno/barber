@@ -1,0 +1,88 @@
+.slider-area{
+    margin-top: -1px;
+    position: relative;
+
+
+    &__first-slide {
+        background: url(../img/hero/slider1.jpg) top center /cover;
+        height: 100vh;
+    }
+    &__second-slide {
+        background: url(../img/hero/slider2.jpg) top center /cover;
+        height: 100vh;
+    }
+    &__caption{
+        position: absolute;
+        top:250px;
+        left:5%;
+        user-select: none;
+        @include large-up{
+            top:350px;
+            left:0;
+        }
+    }
+    &__label {
+        color:$secondary;
+        font-family: 'Poppins';
+        font-size: 22px;
+        animation: anim2 2s;
+
+
+
+        @include medium-up{
+        font-size: 36px;
+
+        }
+    }
+    &__text {
+        font-family: 'Oswald';
+        font-size: 36px;
+        animation: anim 2.5s;
+        @include medium-up{
+            font-size: 64px;
+
+            }
+    }
+
+    &__button {
+        padding: 20px;
+        background: $secondary;
+        font-size: 22px;
+        line-height: 24px;
+        transition: all .5s ease;
+        &:hover {
+            opacity: .6;
+            transform: translateY(-2px)
+        }
+    }
+
+    @keyframes anim {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+
+
+        }
+    }
+    @keyframes anim2 {
+        from {
+            transform: translateX(-100px);
+            opacity: 0;
+
+        }
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+
+
+        }
+    }
+
+
+}
+
