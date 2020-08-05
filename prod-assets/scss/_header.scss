@@ -7,6 +7,26 @@
     z-index: 9;
 
 }
+.color {
+    background: $black;
+    position: fixed;
+    opacity: .9;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 9;
+    padding: 35px;
+
+    @include medium-up{
+        padding:0px;
+        opacity: .7;
+
+    }
+    @include large-up{
+        padding: 30px;
+    }
+}
+
 
 .header-main {
     padding: 20px;
@@ -19,6 +39,7 @@
     height: 3px;
     width: 23px;
     margin: 5px;
+    background: $secondary;
     transition: all .4s;
 
 }
@@ -38,7 +59,8 @@
 }
 .navbar-nav{
     background: #fff!important;
-    margin-top: 15px;
+
+
     .nav-link{
         color:$black!important;
     }
@@ -53,6 +75,9 @@
     }
 
 }
+
+
+
 
 // Change styles localy in navbar-brand
 .navbar-brand {

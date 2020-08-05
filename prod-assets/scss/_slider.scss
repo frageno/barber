@@ -4,12 +4,16 @@
 
 
     &__first-slide {
-        background: url(../img/hero/slider1.jpg) top center /cover;
+        background: url(../img/hero/slider1.jpg) center center /cover;
         height: 100vh;
+        max-width: 100%;
     }
     &__second-slide {
-        background: url(../img/hero/slider2.jpg) top center /cover;
+        background: url(../img/hero/slider2.jpg) center center /cover;
         height: 100vh;
+        max-width: 100%;
+
+
     }
     &__caption{
         position: absolute;
@@ -21,11 +25,21 @@
             left:0;
         }
     }
+    &__second-caption{
+        position: absolute;
+        top:300px;
+        left:5%;
+        user-select: none;
+        @include large-up{
+            top:400px;
+            left:-10%;
+        }
+    }
     &__label {
         color:$secondary;
         font-family: 'Poppins';
         font-size: 22px;
-        animation: anim2 2s;
+        animation: anim2 2s ease 3ms;
 
 
 
@@ -37,7 +51,7 @@
     &__text {
         font-family: 'Oswald';
         font-size: 36px;
-        animation: anim 2.5s;
+        animation: anim 3s ease 3ms;
         @include medium-up{
             font-size: 64px;
 
@@ -82,6 +96,7 @@
 
         }
     }
+
 
 
 }
