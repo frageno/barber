@@ -9,20 +9,32 @@
     <script src="https://kit.fontawesome.com/4c901afbcb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Preloader -->
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img">
+                <img src="prod-assets/img/logo/LogoMakr_5UyYzp.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- End of Preloader -->
     <main>
         <!-- Header -->
         <header class="header-transparent pt-0 pt-lg-5">
             <div class="header-main">
-            <nav class="navbar navbar-expand-lg sticky-top">
+            <nav class="navbar navbar-expand-lg fixed-top">
 
                 <a href="index.html" class="navbar-brand">
                     <img src="prod-assets/img/logo/LogoMakr_5UyYzp.png"
-                    height="50" class="d-inline-block align-top mr-2" alt="https://logomakr.com/">
+                    height="50" class="d-inline-block" alt="https://logomakr.com/">
                     BARBER</a>
                 <button class="navbar-toggler" id="nav-button" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="bg-light header-line1"></div>
-                    <div class="bg-light header-line2"></div>
-                    <div class="bg-light header-line3"></div>
+                    <div class="header-line1"></div>
+                    <div class="header-line2"></div>
+                    <div class="header-line3"></div>
                   </button>
                   <div class="collapse navbar-collapse justify-content-end" id="navbarItems">
                     <ul class="navbar-nav text-center">
@@ -55,7 +67,7 @@
         <!-- End of Header -->
         <!-- Slider -->
 
-        <div id="sliderControls" class="carousel slide" data-ride="carousel2">
+        <div id="sliderControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active slider-area__first-slide">
 
@@ -73,7 +85,11 @@
               <div class="carousel-item slider-area__second-slide">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-8 col-lg-9 col-md-10 col-sm-11 text-white slider-area__caption">
+                        <div class="col-xl-8 col-lg-9 col-md-10 col-sm-11 text-white slider-area__second-caption">
+
+                            <h4 class="slider-area__label">With Mathew Carter</h4>
+                            <h1 class="slider-area__text">With him your appearance will be look amazing</h1>
+                            <button type="button" class="my-4 slider-area__button">Make an appointment now >></button>
 
                         </div>
                     </div>
@@ -89,13 +105,29 @@
 
         <!-- End of Slider -->
     </main>
-    <script src="prod-assets/js/script.js"></script>
+<!-- About us section-->
+<section class="py-5 position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-11 py-5">
+        <div class="d-flex align-items-center justify-content-center py-0 py-lg-5">
+          <img src="prod-assets/img/about-us/about-us-image.png" height="570" width="460">
+        </div>
+
+    </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- End of about us section-->
+
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- End of Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="prod-assets/js/script.js"></script>
 
 </body>
 </html>
