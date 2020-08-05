@@ -7,7 +7,29 @@ addClassChange = () => {
 
     navButton.classList.toggle('change');
 }
-// Wrap every letter in a span
+
+// PRELOADER
+  setTimeout(function(){
+    $('#preloader-active').toggle();
+},50);
+
+// SCROLL TOP APPEAR BACKGROUND ON NAVBAR
+$(window).scroll(function(){
+  let position = $(this).scrollTop();
+  if(position >=800){
+    $('.header-transparent').addClass('color');
+
+
+  }else {
+    $('.header-transparent').removeClass('color');
+
+
+
+
+  }
+});
+
+
 
 
 // EVENT LISTENERS
