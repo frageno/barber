@@ -1,38 +1,45 @@
 .header-transparent{
     background: transparent;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     right: 0;
     z-index: 9;
+    transition: .6s;
 
 }
+main {
+    box-shadow: 3px 3px 20px #3f4441;
+}
 .color {
-    background: $black;
+    background: $bg-nav-color;
     position: fixed;
-    opacity: .9;
     top:0;
     left:0;
     right: 0;
     z-index: 9;
-    padding: 35px;
+    padding:90px;
+    transition: .6s;
+
 
     @include medium-up{
-        padding:0px;
-        opacity: .7;
+        padding:60px;
+    }
+    @include large-up{
+        padding: 60px;
+    }
+}
+
+
+.navbar{
+    padding: 10px 20px!important;
+    @include medium-up{
+    padding: 25px 40px!important;
 
     }
     @include large-up{
-        padding: 30px;
-    }
-}
+    padding: 25px 250px!important;
 
-
-.header-main {
-    padding: 20px;
-
-    @include large-up {
-        padding: 0 150px;
     }
 }
 .header-line1,.header-line2,.header-line3{
@@ -53,13 +60,11 @@
 .change .header-line3{
     transform: rotate(45deg) translate(-5px, -6px);
 
-
-
-
 }
 .navbar-nav{
     background: #fff!important;
-
+    margin-top: 16px;
+    transition: .6s;
 
     .nav-link{
         color:$black!important;
@@ -71,9 +76,7 @@
         .nav-link{
             color:$white!important;
         }
-
     }
-
 }
 
 
@@ -83,6 +86,7 @@
 .navbar-brand {
     font-size: 2rem!important;
     color:$white!important;
+    transition: .6s;
 }
 
 .nav-item{
