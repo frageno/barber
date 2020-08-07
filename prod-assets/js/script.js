@@ -3,6 +3,8 @@ let navButton = document.getElementById('nav-button');
 const counters = document.querySelectorAll(".counter__counter");
 const speed = 600;
 
+
+// Updating counter
 counters.forEach(counter =>{
 
 
@@ -42,7 +44,7 @@ addClassChange = () => {
 // PRELOADER
   setTimeout(function(){
     $('#preloader-active').toggle();
-},15);
+},1500);
 
 // SCROLL TOP APPEAR BACKGROUND ON NAVBAR
 $(window).scroll(()=>{
