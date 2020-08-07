@@ -1,5 +1,36 @@
 // ITEMS FROM DOM
 let navButton = document.getElementById('nav-button');
+const counters = document.querySelectorAll(".counter__counter");
+const speed = 600;
+
+counters.forEach(counter =>{
+
+
+  const updateCount = () =>{
+    const target = +counter.getAttribute('data-target');  // getting data-target value
+    const count = +counter.innerText;   // getting value of count
+    const inc = target / speed;   // increment value
+
+    if(count < target){
+
+      counter.innerText = Math.ceil(count + inc);
+      setTimeout(updateCount,1);
+    }else{
+      count.innerText = target;
+    }
+
+  }
+
+
+  updateCount();
+
+
+
+});
+
+
+
+
 
 
 // HAMBURGER MENU FUNCTION
@@ -11,12 +42,12 @@ addClassChange = () => {
 // PRELOADER
   setTimeout(function(){
     $('#preloader-active').toggle();
-},50);
+},15);
 
 // SCROLL TOP APPEAR BACKGROUND ON NAVBAR
 $(window).scroll(()=>{
   let position = $(this).scrollTop();
-  if(position >=650){
+  if(position >=350){
     $('.header-transparent').addClass('color');
 
 
@@ -28,11 +59,7 @@ $(window).scroll(()=>{
 // Scroll to top button
 const scrollToTop = document.querySelector("#scrollToTop");
 scrollToTop.addEventListener('click', function (){
-  window.scrollTo({
-    top:0,
-    left:0,
-    behavior: 'smooth'
-  });
+  $('html, body').animate({scrollTop: 0 }, "slow");
 });
 
 // SCROLL ANIMATION ON ABOUT US ITEMS
