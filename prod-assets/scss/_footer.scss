@@ -1,0 +1,121 @@
+.footer {
+        padding-top: 80px;
+        border-bottom: 1px solid $primary;
+
+        &__bg{
+            background: url(../img/footer/tasky_pattern.png) center center;
+            height: 185vh;
+            @include medium-up{
+                height: 70vh;
+            }
+            @include large-up{
+                height: 55vh;
+            }
+        }
+        &__brand{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:$white;
+            margin-left: -270px;
+            @include medium-up {
+            margin-left: -140px;
+
+            }
+            @include large-up {
+                margin-left: -200px;
+
+                }
+
+            &:hover{
+                text-decoration: none;
+                color:$white;
+            }
+
+
+
+        }
+        &__text{
+            font-family: 'Poppins', sans-serif;
+            color:#c9c9c9;
+        }
+        &__logo-text{
+            margin-left: 10px;
+            font-size: 2rem;
+
+        }
+        &__phone-number{
+            color:$secondary;
+        }
+        &__email{
+            color:$white;
+            font-family: 'Poppins';
+            font-weight: 100;
+        }
+        &__heading{
+            color:$white;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+        &__item{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 100;
+            color:#c9c9c9;
+            text-decoration: none!important;
+            transition: .6s;
+            &:hover{
+                color:$white;
+            }
+
+        }
+        &__list-item{
+            list-style-type: none;
+            padding-bottom: 15px;
+            transition: .6s;
+            &:hover{
+
+                transform: translateX(-2px);
+            }
+
+        }
+        &__form{
+            display: block;
+            margin: 0 auto;
+
+
+        }
+        &__input {
+            padding: 8px;
+            background: $bg-nav-color;
+            outline: 0;
+            border:0;
+            width: 88%;
+            @include medium-up{
+                width: 65%;
+            }
+            @include large-up{
+                width: 80%;
+            }
+            &::placeholder{
+                color:$white!important;
+            }
+            &:focus{
+                color:$white;
+            }
+        }
+        &__btn {
+            width: 50px;
+            padding: 8px;
+            margin-left: -10px;
+
+
+
+        }
+
+}
+
+.copyright{
+    color:$white;
+    font-family: 'Poppins';
+    font-weight: 100;
+}

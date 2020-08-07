@@ -1,0 +1,46 @@
+.discount {
+
+    &__bg{
+
+        background: url(../img/discount/bg.png) center center /cover;
+        height: 80vh;
+        background-attachment: fixed;
+        @include medium-up{
+            height: 50vh;
+        }
+    }
+    &__heading {
+        margin-top: 60px;
+        font-family: 'Poppins';
+
+
+        @include medium-up{
+            margin-top: 10px;
+        }
+        @include large-up{
+            margin-top: 90px;
+        }
+    }
+    &__text {
+        font-family: 'Poppins';
+        width: 75%;
+        margin: 0 auto;
+        @include medium-up{
+            width: 50%;
+        }
+    }
+    &__btn {
+        width: 200px;
+        padding: 15px;
+        background: $secondary;
+        color:$black;
+        transition: all .6s ease;
+
+        &:hover{
+            cursor: pointer;
+            background: transparent;
+            color:$white;
+            border:1px solid $secondary!important;
+        }
+    }
+}

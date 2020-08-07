@@ -1,0 +1,31 @@
+.counter{
+    &__heading{
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 36px;
+        border-bottom: 1px solid $primary;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+
+    }
+    &__icon {
+        margin-top: 25px;
+        border:1px solid $primary;
+        padding: 15px;
+        transition: .6s;
+
+        &:hover {
+            transform: rotate(-45deg);
+        }
+
+    }
+    &__text {
+        margin-top: 50px;
+    }
+    &__counter {
+        font-size: 24px;
+        color: $primary;
+    }
+
+}
