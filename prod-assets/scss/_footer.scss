@@ -4,7 +4,7 @@
 
         &__bg{
             background: url(../img/footer/tasky_pattern.png) center center;
-            height: 185vh;
+            height: 280vh;
             @include medium-up{
                 height: 70vh;
             }
@@ -17,7 +17,7 @@
             align-items: center;
             justify-content: center;
             color:$white;
-            margin-left: -270px;
+            margin-left: -150px;
             @include medium-up {
             margin-left: -140px;
 
@@ -89,7 +89,7 @@
             background: $bg-nav-color;
             outline: 0;
             border:0;
-            width: 88%;
+            width: 80%;
             @include medium-up{
                 width: 65%;
             }
