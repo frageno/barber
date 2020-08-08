@@ -1,0 +1,14 @@
+.portfolio {
+    border-bottom: 1px solid $primary;
+    padding-bottom: 30px;
+
+    &__btn {
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        transition: all .4s;
+
+        &:hover {
+            color:$primary;
+        }
+    }
+}

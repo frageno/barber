@@ -99,9 +99,7 @@
             &::placeholder{
                 color:$white!important;
             }
-            &:focus{
-                color:$white;
-            }
+
         }
         &__btn {
             width: 50px;
@@ -119,3 +117,4 @@
     font-family: 'Poppins';
     font-weight: 100;
 }
+

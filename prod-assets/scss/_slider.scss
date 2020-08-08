@@ -7,25 +7,28 @@
 
     &__first-slide {
         background: url(../img/hero/slider1.jpg) center center /cover;
-        height: 80vh;
-        width: 100vw;
-            @include medium-up{
-            height: 100vh;
-        }
+
 
     }
     &__second-slide {
         background: url(../img/hero/slider2.jpg) center center /cover;
-        height: 80vh;
-        @include medium-up{
-            height: 100vh;
-        }
 
+
+
+    }
+    &__third-slide {
+        background: url(../img/portfolio/bg-portfolio.jpg) center center /cover;
+        height: 50vh;
+        background-attachment: fixed; // parallax effect
 
     }
     &__first-slide, &__second-slide {
         position: relative;
         background-attachment: fixed; // parallax effect
+        height: 80vh;
+        @include medium-up {
+            height: 100vh;
+        }
 
 
     }
@@ -56,6 +59,19 @@
             top:400px;
             left:-10%;
         }
+    }
+    &__portfolio{
+        margin-top: 130px;
+        font-size: 64px;
+        @include medium-up{
+        margin-top: 180px;
+
+        }
+        @include large-up{
+            margin-top: 240px;
+
+            }
+
     }
     &__label {
         color:$secondary;
