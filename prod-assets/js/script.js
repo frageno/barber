@@ -44,7 +44,7 @@ addClassChange = () => {
 // PRELOADER
   setTimeout(function(){
     $('#preloader-active').toggle();
-},1500);
+},2500);
 
 // SCROLL TOP APPEAR BACKGROUND ON NAVBAR
 $(window).scroll(()=>{
