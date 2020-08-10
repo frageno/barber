@@ -98,7 +98,7 @@ document.querySelectorAll(".showmore").forEach(function (p) {
   });
 });
 
-
+// Filtering gallery
 $('.portfolio__gallery-list-item').click(function() {
   let value = $(this).attr('data-filter');
   if(value === 'all'){
