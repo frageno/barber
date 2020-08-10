@@ -13,6 +13,7 @@
 This project presents website for something like barber, site is full responsive using bootstrap.
 Website presents a lot of modern solutions. I created this site from scratch and I have done all subpages.
 Project it contains a parallax effect, carousel, collapse, filtering effect, and also some nicely looking effect using JS or CSS.
+On the blog section you can choose the intresting section, open it and see the comments placed bottom of the article.
 
 
  
