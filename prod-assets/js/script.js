@@ -1,39 +1,45 @@
 // ITEMS FROM DOM
 let navButton = document.getElementById('nav-button');
 const counters = document.querySelectorAll(".counter__counter");
-const speed = 600;
+const speed = 1000;
+
+
 
 
 // Updating counter
-counters.forEach(counter =>{
+window.addEventListener('scroll', ()=>{
+  const scrolled = window.scrollY;
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  if(Math.ceil(scrolled) === scrollable) {
+
+    counters.forEach(counter =>{
 
 
-  const updateCount = () =>{
-    const target = +counter.getAttribute('data-target');  // getting data-target value
-    const count = +counter.innerText;   // getting value of count
-    const inc = target / speed;   // increment value
+      const updateCount = () =>{
+        const target = +counter.getAttribute('data-target');  // getting data-target value
+        const count = +counter.innerText;   // getting value of count
+        const inc = target / speed;   // increment value
 
-    if(count < target){
 
-      counter.innerText = Math.ceil(count + inc);
-      setTimeout(updateCount,1);
-    }else{
-      count.innerText = target;
-    }
+        if(count < target){
 
+          counter.innerText = Math.ceil(count + inc);
+          setTimeout(updateCount,1);
+        }else{
+          count.innerText = target;
+        }
+
+      }
+      updateCount();
+
+
+
+
+
+    });
   }
 
-
-  updateCount();
-
-
-
 });
-
-
-
-
-
 
 // HAMBURGER MENU FUNCTION
 addClassChange = () => {
@@ -44,7 +50,8 @@ addClassChange = () => {
 // PRELOADER
   setTimeout(function(){
     $('#preloader-active').toggle();
-},2500);
+},2000);
+
 
 // SCROLL TOP APPEAR BACKGROUND ON NAVBAR
 $(window).scroll(()=>{
@@ -87,14 +94,24 @@ $(window).scroll(()=>{
 document.querySelectorAll(".showmore").forEach(function (p) {
   p.querySelector("a").addEventListener("click", function () {
     p.classList.toggle("show");
-    console.log(this);
     this.textContent = p.classList.contains("show") ? "Read Less" : "Read More";
   });
 });
 
 
+$('.portfolio__gallery-list-item').click(function() {
+  let value = $(this).attr('data-filter');
+  if(value === 'all'){
+    $('.filter').show(300);
+  }else {
+    $('.filter').not('.' +value).hide(300);
+    $('.filter').filter('.' +value).show(300);
+  }
+});
 
-
+$('.portfolio__gallery-list-item').click(function(){
+  $(this).addClass('portfolio__active-item').siblings().removeClass('portfolio__active-item');
+});
 
 
 
