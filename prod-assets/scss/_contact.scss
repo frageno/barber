@@ -1,0 +1,41 @@
+.contact{
+
+    &__form {
+        border:1px solid #ccc;
+        border-radius: 10px;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 35px;
+        box-shadow: 5px 5px 25px rgba(0,0,0,.5);
+    }
+    &__input{
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ccc!important;
+        padding: 10px;
+
+        &:focus{
+            outline:0;
+        }
+    }
+    &__label{
+        font-family: 'Poppins', sans-serif;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+    &__btn {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        background: $primary;
+        border-radius: 5px;
+        color:$white;
+        padding: 5px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+        font-family: 'Poppins';
+    }
+}

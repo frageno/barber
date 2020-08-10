@@ -7,8 +7,18 @@
         font-family: 'Poppins', sans-serif;
         transition: all .4s;
 
-        &:hover {
-            color:$primary;
+        &:hover{
+            opacity: .7;
         }
+
+    }
+
+    &__show {
+        display: block;
+    }
+    &__active-item {
+        background: $primary;
+        color:$white;
     }
 }
+

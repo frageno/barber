@@ -1,0 +1,63 @@
+.blog {
+    &__content{
+        position: relative;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+
+
+    }
+
+    &__label{
+        position: absolute;
+        bottom:30px;
+        left:0;
+        width: 150px;
+        height: 40px;
+        background-color: $primary;
+        color:$white;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(255,255,255,.1);
+    }
+    &__divider{
+        border-bottom: 1px solid $bg-nav-color;
+    }
+    &__heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+    }
+    &__text{
+        font-family: 'Poppins', sans-serif;
+        color:rgb(124, 122, 122);
+    }
+    &__list-item{
+        list-style-type: none;
+        border-bottom: 1px solid #ccc;
+        font-family: 'Poppins';
+
+
+        a{
+
+            color:$blue;
+            transition: .6s;
+            &:hover {
+                text-decoration: none;
+                opacity: .6;
+            }
+        }
+    }
+    &__comments-heading{
+        font-family: 'Poppins'!important;
+        color:$primary!important;
+    }
+}
+
+a:hover {
+
+        text-decoration: none!important;
+
+}
+
+// collapse body
+.card-body p{
+    font-family: 'Poppins';
+}
+
