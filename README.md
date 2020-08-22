@@ -42,7 +42,6 @@ You can copy this repository's from here, at your computer follow this three ste
 
 ## Sources
 
-* Images are download from internet,
 * www.fontawsome.com, 
 * www.stackoverflow.com (help me find a solutions to do something), 
 * www.unsplash.com (Images),
