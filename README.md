@@ -45,6 +45,18 @@ You can also see this project by a visit github-pages where I hosted this web.
 * https://frageno.github.io/
 
 ## Sources
+The things that were created in this projects like <br />
+ - images,<br />
+ - fonts, <br />
+ - hosting, <br />
+ - logo, <br />
+ - icons, <br />
+ - patters, <br />
+ - inspriation <br />
+ - helpfull materials <br />
+ <h2>come from this sources:</h2>
+ 
+ 
 * github-pages (for host this webstie),
 * www.fontawsome.com, (icons),
 * https://logomakr.com/ (From this site i download logo for this barber-site),
@@ -54,6 +66,7 @@ You can also see this project by a visit github-pages where I hosted this web.
 * and others project from internet which inspired me for build this website. 
 
 ## Illustrations
+This section presents images,mockup which presents this website. Let's take a look!
 
 <b>Mockups and full-views of this site</b>
 ![fullview](https://github.com/frageno/frageno.github.io/blob/master/prod-assets/img/mockups/desktop-view.png)
