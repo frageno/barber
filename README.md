@@ -40,13 +40,23 @@ You can copy this repository's from here, at your computer follow this three ste
 
 * npm start or run with your localserver 
 
-## Sources
+You can also see this project by a visit github-pages where I hosted this web.
 
-* www.fontawsome.com, 
+* https://frageno.github.io/
+
+## Sources
+* github-pages (for host this webstie),
+* www.fontawsome.com, (icons),
+* https://logomakr.com/ (From this site i download logo for this barber-site),
 * www.stackoverflow.com (help me find a solutions to do something), 
 * www.unsplash.com (Images),
+* www.toptal.com/designers/subtlepatterns/ (patter for footer),
 * and others project from internet which inspired me for build this website. 
 
 ## Illustrations
 
 <b>Mockups and full-views of this site</b>
+![fullview](https://github.com/frageno/frageno.github.io/blob/master/prod-assets/img/mockups/desktop-view.png)
+![mobileview](https://github.com/frageno/frageno.github.io/blob/master/prod-assets/img/mockups/mobile-view.png)
+![tabletmockup](https://github.com/frageno/frageno.github.io/blob/master/prod-assets/img/mockups/tablet-mockup.jpg)
+![tabletview](https://github.com/frageno/frageno.github.io/blob/master/prod-assets/img/mockups/tablet-view.png)
