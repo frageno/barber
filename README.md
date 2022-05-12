@@ -38,9 +38,6 @@ You can copy this repository's from here, at your computer follow this three ste
 
 * npm start or run with your localserver 
 
-You can also see this project by a visit github-pages where I hosted this web.
-
-* https://frageno.github.io/
 
 ## Sources
 The things that were created in this projects like <br />
